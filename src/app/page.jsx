@@ -19,7 +19,7 @@ export default async function Home({searchParams}) {
   const res = await fetch(movieLinkUrl,{next:{revalidate:1000}})
    const data = await res.json()
    const result = data.results
-  //  console.log(result)
+   console.log(result)
    if(!res.ok){
     throw new Error("Something went wrong whiles fetching data.")
    }
