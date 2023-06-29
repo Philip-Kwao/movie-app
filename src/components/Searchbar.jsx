@@ -11,7 +11,7 @@ const Searchbar = () => {
     if(!search){
       return
     }
-    router.push(`/ search/${search}`)
+    router.push(`/search/${search}`)
     // alert(search)
   }
 
