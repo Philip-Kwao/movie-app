@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const Card = ({img,cardLink, date, cardPopular,cardVote, cardTitle, altTitle}) => {
+const Card = ({img,cardLink, date, cardPopular,cardVote, cardTitle, altTitle, detail}) => {
   return (
       <div className="relative my-4 max-w-2xl mx-auto group">
             <Link href={cardLink}>
@@ -16,6 +16,7 @@ const Card = ({img,cardLink, date, cardPopular,cardVote, cardTitle, altTitle}) =
                             <span>votes: {cardVote}</span>
                         </span>
                     </div>
+                    <p className='bottom-0 mt-16 text-justify text-sm'>{detail}</p>
                 </div>
             </Link>
         </div>
